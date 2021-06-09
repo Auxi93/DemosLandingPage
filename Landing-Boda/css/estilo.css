@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  line-height: 29px;
+  font-weight: 400;
+  font-size: 0.9em;
+  color: black;
+  line-height: 2em;
+}
+
+p a {
+  display: inline;
+}
+
+img {
+  /* width: 100%; */
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  color: inherit;
+}
+
+body {
+  font-size: 16px;
+}
+
+.centrado {
+  width: 70%;
+  margin: auto;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  padding: 40px;
+}
+header ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  color: #ffffff;
+  margin: 0px 20px;
+  font-size: 1.18em;
+  font-family: "Arvo", serif;
+}
+
+.ir-arriba {
+  display: none;
+  padding: 20px;
+  background: #024959;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  position: fixed;
+  z-index: 3;
+  bottom: 20px;
+  right: 20px;
+}
+
+main .photo {
+  min-height: 800px;
+  background-image: url(../assets/background-image1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+main .photo span {
+  color: #ffffff;
+  font-family: "Arvo", serif;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+main .photo h2 img {
+  width: 80%;
+  margin: auto;
+}
+main .story {
+  width: 100%;
+  min-height: 700px;
+}
+main .story .centrado {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 40px;
+}
+main .story .centrado .overlay {
+  position: absolute;
+  top: 3.6em;
+}
+main .story .centrado h3 {
+  text-align: center;
+  color: #2f2f2f;
+  font-weight: 400;
+  font-size: 2.25em;
+}
+main .story .centrado p {
+  text-align: center;
+  color: #6b6b6b;
+  font-weight: 400;
+  font-size: 0.93em;
+  line-height: 29px;
+  padding: 0px 130px;
+}
+main .photo.dates {
+  min-height: 500px;
+  background-image: url(../assets/background-image2.jpg);
+}
+main .photo.dates h2 img {
+  width: 100%;
+  margin: auto;
+}
+main .events {
+  width: 100%;
+}
+main .events .slider {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+main .events .slider .overlay {
+  position: absolute;
+  top: 0.6em;
+}
+main .events .slider h3 {
+  text-align: center;
+  color: #2f2f2f;
+  font-weight: 400;
+  font-size: 2.25em;
+}
+main .events .slider p {
+  text-align: center;
+  color: #6b6b6b;
+  font-weight: 400;
+  font-size: 0.93em;
+  line-height: 29px;
+  padding: 0px 130px;
+}
+main .events .wedding {
+  margin: 40px 0px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+main .events .wedding li {
+  color: #6b6b6b;
+  line-height: 29px;
+  font-size: 0.93em;
+  font-weight: 400;
+  text-align: center;
+}
+main .events .wedding li.title {
+  color: #2f2f2f;
+  font-size: 1.25em;
+  font-family: "Arvo", serif;
+  margin-bottom: 20px;
+}
+main .engagement {
+  width: 100%;
+  background: #f9f9f9;
+}
+main .engagement .slider {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+main .engagement .slider .overlay {
+  position: absolute;
+  top: 0.6em;
+}
+main .engagement .slider h3 {
+  text-align: center;
+  color: #2f2f2f;
+  font-weight: 400;
+  font-size: 2.25em;
+}
+main .engagement .slider p {
+  text-align: center;
+  color: #6b6b6b;
+  font-weight: 400;
+  font-size: 0.93em;
+  line-height: 29px;
+  padding: 0px 130px;
+}
+main .engagement .gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+main .engagement .gallery .picture {
+  width: calc( 100% / 4 - 20px );
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+}
+main .engagement .gallery .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+main .engagement .gallery .picture:hover .overlay {
+  opacity: 1;
+}
+main .engagement .gallery .picture img {
+  transform: scale(1);
+  transition: all 2s ease;
+}
+main .engagement .gallery .picture:hover img {
+  transform: scale(1.2);
+}
+main .engagement .button {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+main .engagement .button p {
+  font-family: "Arvo", serif;
+  font-size: 1em;
+  color: #2f2f2f;
+}
+main .engagement .button .fas {
+  margin: 0px 10px;
+  color: #6b6b6b;
+}
+main .photo.celebrate {
+  min-height: 500px;
+  background-image: url(../assets/background-image3.jpg);
+}
+main .photo.celebrate h2 img {
+  width: 100%;
+  margin: auto;
+}
+main .rooms {
+  width: 100%;
+}
+main .rooms .slider {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+main .rooms .slider .overlay {
+  position: absolute;
+  top: 0.6em;
+}
+main .rooms .slider h3 {
+  text-align: center;
+  color: #2f2f2f;
+  font-weight: 400;
+  font-size: 2.25em;
+}
+main .rooms .slider p {
+  text-align: center;
+  color: #6b6b6b;
+  font-weight: 400;
+  font-size: 0.93em;
+  line-height: 29px;
+  padding: 0px 130px;
+}
+main .rooms .hotels {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0px;
+}
+main .rooms article {
+  margin: 20px;
+}
+main .rooms article h4 {
+  color: #2f2f2f;
+  font-weight: 400;
+  font-family: "Arvo", serif;
+  font-size: 1.25em;
+  margin: 20px 0px;
+}
+main .rooms article li {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.93em;
+  line-height: 29px;
+  font-weight: 400;
+  color: #6b6b6b;
+}

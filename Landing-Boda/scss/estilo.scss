@@ -1,0 +1,321 @@
+@import "reset", "variables", "keyframes";
+
+header{
+  width: 100%;
+  // background-color: lightcyan;
+  
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  padding: 40px;
+  ul{
+    // background-color: plum;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    
+    li{
+      // background-color: pink;
+      color: $blanco;
+      margin: 0px 20px;
+      font-size: 1.18em;
+      font-family: 'Arvo', serif;
+    }
+  }
+}
+.ir-arriba{
+  display: none;
+  padding: 20px;
+  background: #024959;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  position: fixed;
+  z-index: 3;
+  bottom: 20px;
+  right: 20px;
+}
+main{
+  
+  .photo{
+    min-height: 800px;
+    background-image: url(../assets/background-image1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; 
+    // (No estoy segura de si esto me va a dejar usar otras fotos después)
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    span{
+      color: $blanco;
+      font-family: 'Arvo', serif;
+      font-size: 1.4em;
+      font-weight: 700;
+    }
+    h2 img{
+      width: 80%;
+      margin: auto;
+    }
+  }
+  .story{
+    width: 100%;
+    min-height: 700px;
+    // background-color: lightblue;
+    .centrado{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 40px;
+
+      .overlay{
+        position: absolute;
+        top: 3.6em;
+      }
+      h3{
+        text-align: center;
+        color: $gris;
+        font-weight: 400;
+        font-size: 2.25em;
+      }
+      p{
+        text-align: center;
+        color: $lightgris;
+        font-weight: 400;
+        font-size: .93em;
+        line-height: 29px;
+        padding: 0px 130px;
+      }
+    }
+    
+   
+   
+  }
+  .photo.dates{
+    min-height: 500px;
+    background-image: url(../assets/background-image2.jpg);
+   
+    h2 img{
+      width: 100%;
+      margin: auto;
+    }
+  }
+  .events{
+    width: 100%;
+    // background-color: lightcoral;
+    
+    .slider{
+      // background-color: lightgoldenrodyellow;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      .overlay{
+        position: absolute;
+        top: 0.6em;
+      }
+      h3{
+        text-align: center;
+        color: $gris;
+        font-weight: 400;
+        font-size: 2.25em;
+      }
+      p{
+        text-align: center;
+        color: $lightgris;
+        font-weight: 400;
+        font-size: .93em;
+        line-height: 29px;
+        padding: 0px 130px;
+      }
+    }
+    .wedding{
+      margin: 40px 0px;
+      // background-color: paleturquoise;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      align-items: center;
+
+      li{
+        color: $lightgris;
+        line-height: 29px;
+        font-size: .93em;
+        font-weight: 400;
+        text-align:center;
+      }
+      li.title{
+        color: $gris;
+        font-size: 1.25em;
+        font-family: 'Arvo', serif;
+        margin-bottom: 20px;
+      }
+    }
+   
+    
+  }
+  .engagement{
+    width: 100%;
+    background: $fondo;
+    
+    .slider{
+      // background-color: lightgoldenrodyellow;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      .overlay{
+        position: absolute;
+        top: 0.6em;
+        
+      }
+      h3{
+        text-align: center;
+        color: $gris;
+        font-weight: 400;
+        font-size: 2.25em;
+      }
+      p{
+        text-align: center;
+        color: $lightgris;
+        font-weight: 400;
+        font-size: .93em;
+        line-height: 29px;
+        padding: 0px 130px;
+      }
+    }
+    .gallery{
+      // background-color: palevioletred;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      
+      
+      .picture{
+        width: calc( 100% / 4 - 20px );
+        margin:10px;
+        position: relative;
+        overflow: hidden;
+        
+      }
+      .overlay{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.30);
+        position: absolute;
+        top: 0; 
+        left: 0;
+        transition: all .4s ease;
+        opacity: 0;
+      }
+      .picture:hover .overlay{
+        opacity: 1;
+      }
+      .picture img{
+        transform: scale(1);
+        transition:all 2s ease;
+         
+      }
+      .picture:hover img{
+          transform: scale(1.2);
+      }
+    }
+    .button{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+      p{
+        font-family: 'Arvo', serif;
+        font-size: 1em;
+        color: $gris;
+      }
+      .fas{
+        margin: 0px 10px;
+        color: $lightgris;
+      }
+    }
+    
+  }
+  .photo.celebrate{
+    min-height: 500px;
+    background-image: url(../assets/background-image3.jpg);
+   
+    h2 img{
+      width: 100%;
+      margin: auto;
+    }
+  }
+  .rooms{
+    width: 100%;
+    // background-color: lightcoral;
+    
+    .slider{
+      // background-color: lightgoldenrodyellow;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      .overlay{
+        position: absolute;
+        top: 0.6em;
+      }
+      h3{
+        text-align: center;
+        color: $gris;
+        font-weight: 400;
+        font-size: 2.25em;
+      }
+      p{
+        text-align: center;
+        color: $lightgris;
+        font-weight: 400;
+        font-size: .93em;
+        line-height: 29px;
+        padding: 0px 130px;
+      }
+    }
+    .hotels{
+      // background-color: pink;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      margin: 40px 0px;
+    }
+    article{
+      margin: 20px;
+
+      h4{
+        color: $gris;
+        font-weight: 400;
+        font-family: 'Arvo', serif;
+        font-size: 1.25em;
+        margin: 20px 0px;
+      }
+      li{
+        font-family: "Raleway", sans-serif;
+        font-size: .93em;
+        line-height: 29px;
+        font-weight: 400;
+        color: $lightgris;
+      }
+    }
+    
+  }
+}

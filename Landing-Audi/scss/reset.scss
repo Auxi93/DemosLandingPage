@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+
+a{
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+p{
+    line-height: 29px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: .9em;
+    color: black;
+    
+  
+}
+p a {
+    display: inline;
+
+}
+img, video{
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+}
+form, form *{
+    background: transparent;
+    font-family: inherit;
+    font-size: inherit;
+  
+   
+}
+form, textarea{
+    
+    background-color: white;
+}
+h1, h2, h3, h4, h5, h6{
+    font-size: inherit;
+    color: inherit;
+    font-family: sans-serif;
+    ;
+    
+}
+body{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.centrado{
+    width: 100%;
+
+}

@@ -1,0 +1,244 @@
+@import "reset";
+
+body {
+  background-color: #f2f2f2;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bar-lateral {
+  min-width: 300px;
+  min-height: 100vh;
+  background-color: #262a34;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
+
+  .logotype {
+    background-color: #0275bd;
+
+    h2 {
+      font-size: 30px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      text-align: center;
+    }
+  }
+
+  .menu {
+    a {
+      display: block;
+      padding: 20px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    a:hover {
+      background-color: #35ae6b;
+    }
+
+    a svg {
+      margin-left: 10px;
+    }
+  }
+}
+
+.main {
+  padding-top: 40px;
+
+  .column {
+    padding: 0 40px;
+  }
+
+  .title {
+    color: #262a34;
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .widget {
+    margin-bottom: 40px;
+
+    &.new-entry form input[type="text"],
+    &.new-entry form textarea {
+      width: 100%;
+      font-family: "Open Sans", sans-serif;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: none;
+      box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    &.new-entry form textarea {
+      max-width: 100%;
+      min-height: 200px;
+      height: 400px;
+    }
+
+    &.new-entry button {
+      background-color: #0275d8;
+      color: #fff;
+      cursor: pointer;
+      font-size: 18px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      border-radius: 2px;
+      border: 1px solid #0275d8;
+      transition: all 0.5s ease;
+      display: inline-block;
+      padding: 10px 20px;
+    }
+
+    &.new-entry button:hover {
+      background-color: #fff;
+      color: #0275d8;
+    }
+  }
+
+  .container-statistics {
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+
+    .box {
+      background-color: #fff;
+      border: 1px solid #e3e3e3;
+      padding: 40px 20px;
+      flex: 1;
+      font-family: "Roboto", sans-serif;
+      text-align: center;
+    }
+
+    .box:first-child {
+      border-right: none;
+    }
+    .box:last-child {
+      border-left: none;
+    }
+
+    h3 {
+      color: #35ae6b;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #a8a8a8;
+      margin-bottom: 0;
+    }
+  }
+
+  .container-reviews {
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+
+    .comment {
+      background-color: #fff;
+      padding: 20px;
+      border-bottom: #dfdfdf;
+
+      .text {
+        flex: 1;
+      }
+
+      .text-review {
+        font-size: 14px;
+      }
+
+      .buttons button {
+        background: none;
+        cursor: pointer;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff;
+        border: none;
+        display: inline-block;
+        padding: 5px 10px;
+        border-radius: 3px;
+        transition: all 0.5s ease;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+
+      .buttons button.approve {
+        background-color: #35ae6b;
+      }
+
+      .buttons button.delete {
+        background-color: #b74848;
+      }
+
+      .buttons button.block {
+        color: #acacac;
+      }
+
+      .buttons button.approve:hover {
+        background-color: #449d44;
+      }
+
+      .buttons button.delete:hover {
+        background-color: #c9302c;
+      }
+
+      .buttons button.block:hover {
+        color: #fff;
+        background-color: #acacac;
+      }
+    }
+
+    .photo {
+      width: 70px;
+      height: 70px;
+      overflow: hidden;
+      margin-right: 20px;
+      border-radius: 50px;
+    }
+
+    .photo a {
+      display: inblock;
+    }
+
+    .photo img {
+      width: 100%;
+      vertical-align: top;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .bar-lateral {
+    min-height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main .container-reviews .comment {
+    .buttons button {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .bar-lateral {
+    min-width: auto;
+
+    .logotype {
+      display: none;
+    }
+
+    .menu a svg {
+      display: none;
+    }
+  }
+
+  .main .container-reviews .photo {
+    width: 50px;
+    height: 50px;
+  }
+}

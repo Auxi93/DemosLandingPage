@@ -1,0 +1,333 @@
+@import "reset";
+
+header {
+  background-color: var(--background);
+
+  .logo {
+    display: inline-block;
+
+    svg {
+      width: 36px;
+      height: 36px;
+      color: var(--white);
+    }
+  }
+
+  .bar-search {
+    width: 100%;
+    position: relative;
+
+    input {
+      width: 100%;
+      height: 40px;
+      background-color: var(--input);
+      border: none;
+      border-radius: 100px;
+      padding: 0 20px 0 40px;
+    }
+
+    .icon-search {
+      position: absolute;
+      top: 6px;
+      left: 15px;
+      color: var(--text);
+    }
+  }
+
+  .menu-icon {
+    a {
+      display: inline-block;
+      padding: 10px 40px;
+      color: var(--text);
+    }
+
+    a:hover {
+      background-color: var(--input);
+      border-radius: 5px;
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    .active {
+      border-bottom: 4px solid var(--active);
+      color: var(--active);
+    }
+
+    .active:hover {
+      background-color: none;
+      border-radius: 0px;
+      color: var(--active);
+    }
+  }
+
+  .menu-profile {
+    a {
+      min-width: 40px;
+      height: 40px;
+      background-color: var(--input);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100px;
+      margin-left: 7px;
+    }
+
+    a:hover {
+      background-color: #4d4d4e;
+      color: var(--text);
+    }
+
+    .photo-profile {
+      min-width: max-content;
+      height: 40px;
+      background-color: none;
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+      }
+    }
+  }
+}
+
+main {
+  aside {
+    height: 100vh;
+    overflow: auto;
+    padding-top: 80px;
+  }
+
+  .pages-facebook > nav a {
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    padding: 10px;
+    border-radius: 3px;
+  }
+
+  .pages-facebook > nav a:hover {
+    background-color: var(--input-hover);
+  }
+
+  .pages-facebook {
+    .profile img {
+      width: 30px;
+      height: 30px;
+      border-radius: 100px;
+      margin-right: 10px;
+    }
+
+    .icon {
+      margin-right: 20px;
+    }
+
+    .icon svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  footer {
+    margin: 30px 0px;
+
+    nav a {
+      font-size: 14px;
+      margin-right: 7px;
+      color: var(--light-grey);
+    }
+    nav a:hover {
+      text-decoration: underline;
+      color: var(--light-grey);
+    }
+  }
+}
+
+.contacts {
+  .section {
+    margin-bottom: 20px;
+
+    h3 {
+      font-size: 18px;
+      font-weight: bold;
+      color: var(--light-grey);
+    }
+
+    .advertising {
+      display: block;
+      max-height: 100px;
+      overflow: hidden;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .advertising img {
+      width: 100%;
+    }
+  }
+
+  nav a {
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  nav a:hover {
+    background-color: var(--input-hover);
+  }
+
+  nav a img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 100px;
+  }
+}
+
+.post {
+  padding-top: 80px;
+  .publication-post, .new-post {
+    width: 100%;
+    background-color: var(--background);
+    border-radius: 5px;
+    margin-bottom: 15px;
+
+    .form {
+      display: flex;
+      justify-self: start;
+    }
+
+    .form input {
+      width: 100%;
+      height: 40px;
+      background-color: var(--input);
+      border-radius: 100px;
+      border: none;
+      margin-left: 20px;
+    }
+
+    .buttons a {
+      width: 100%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 3px;
+      padding: 10px;
+    }
+
+    .buttons a:hover {
+      background-color: var(--input-hover);
+      color: var(--text);
+    }
+
+    .buttons a svg {
+      margin-right: 20px;
+    }
+  }
+
+  .photo {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: block;
+  }
+}
+
+.new-post {
+    .last-post {
+        .header {
+            display: flex;
+            width: 100%;
+            align-items: center;
+
+            .photo {
+                margin-right: 10px;
+            }
+
+            .name:hover, .hour:hover {
+                color: var(--texto);
+            }
+
+            .data a:hover {
+                text-decoration: underline;
+            }
+        }  
+
+        .body {
+            p{
+                color: var(--white);
+                margin-bottom: 10px;
+            }
+        }
+
+        .coments  {
+            padding: 10px;
+        }
+
+        .coments .like svg {
+            margin-right: 10px;
+            color: #e75151;
+        }
+
+        .coments a:hover {
+	        text-decoration: underline;
+        	color: var(--texto);
+        }
+
+        .buttons button {
+            width: 100%;
+            border: none;
+            background: none;
+            color: var(--texto);
+            padding: 10px;
+            border-radius: 3px;
+        }
+
+        .buttons button:hover {
+            background: #3a3b3c;
+        }
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+  .pages-facebook,
+  .contacts {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+    header {
+    padding-top: 10px;
+        .menu {
+            margin-top: 10px;
+        }
+    }
+
+    .main-content {
+    padding-top: 90px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    .menu-icon a {
+      padding: 10px 20px;
+    }
+
+    .menu-icon svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .main-content {
+    padding-top: 95px;
+    }
+}

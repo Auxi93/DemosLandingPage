@@ -1,0 +1,199 @@
+body {
+  background: #f2f2f2;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  .nav {
+    min-height: 80px;
+    background-color: #fff;
+    overflow: hidden;
+  }
+  .logotype h2,
+  p {
+    font-size: 16px;
+    display: inline-block;
+  }
+  .logotype .icon {
+    color: #bfbfbf;
+  }
+  .logotype svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .menu {
+    .c1 {
+      background-color: #e8c39e;
+    }
+    .c2 {
+      background-color: #71dad1;
+    }
+    .c3 {
+      background-color: #276862;
+    }
+  }
+
+  .menu {
+    .c1:hover {
+      background-color: #eaccad;
+    }
+    .c2:hover {
+      background-color: #5dc1b9;
+    }
+    .c3:hover {
+      background-color: #194d47;
+    }
+  }
+}
+main {
+  .works {
+    background-color: #fff;
+    border-top: 4px solid #5dc1b9;
+
+    .title {
+      color: #276862;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+    }
+
+    .gallery .container-img {
+      max-height: 200px;
+      overflow: hidden;
+    }
+
+    .gallery .container-img a {
+      background-color: #eaccad;
+      display: inline-block;
+    }
+
+    .gallery .container-img:hover img {
+      opacity: 0.5;
+    }
+  }
+
+  .modal-dialog {
+    max-width: 1000px;
+  }
+
+  .about {
+    .info {
+      .title {
+        color: #276862;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 300;
+        font-size: 40px;
+        margin-bottom: 30px;
+      }
+
+      .resume {
+        letter-spacing: 2px;
+      }
+
+      .label {
+        font-size: 18px;
+        font-weight: 600;
+        color: #276862;
+      }
+    }
+
+    .photo img {
+      width: 180px;
+      height: 180px;
+    }
+
+    .name {
+      color: #545454;
+      font-weight: 300;
+      font-size: 18px;
+      letter-spacing: 2px;
+    }
+
+    .progress {
+      background-color: #e6e3e0;
+    }
+
+    .progress-bar {
+      background-color: #5dc1b9;
+      border-radius: 0;
+      height: 25px;
+    }
+  }
+
+  .contact {
+    border-top: 1px solid #cbcbcb;
+    border-bottom: 1px solid #cbcbcb;
+
+    .title {
+      color: #276862;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      font-size: 40px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .formulary input[type="text"],
+    .formulary input[type="email"],
+    .formulary textarea {
+      padding: 15px;
+      border: none;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .formulary textarea {
+      min-height: 150px;
+      max-height: 250px;
+    }
+
+    .formulary .button {
+      background-color: #5dc1b9;
+      color: #fff;
+      cursor: pointer;
+      border: none;
+      width: auto;
+      border-radius: 3px;
+      padding: 15px 30px;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .formulary .button:hover {
+      background-color: #fff;
+      color: #5dc1b9;
+    }
+  }
+}
+
+footer {
+  .social-media {
+    padding: 30px 0;
+    margin-bottom: 20px;
+
+    a {
+      width: 70px;
+      height: 70px;
+      color: #fff;
+      background: #cbcbcb;
+      display: inline-block;
+      margin: 0px 10px;
+      text-decoration: none;
+      border-radius: 80px;
+      transition: all 0.5s ease;
+    }
+
+    .icon-rrss svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .social-media .twitter {
+    background: #1da1f2;
+  }
+  .social-media .instagram {
+    background: #833ab4;
+  }
+  .social-media .facebook {
+    background: #3b5998;
+  }
+}
